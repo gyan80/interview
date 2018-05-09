@@ -33,6 +33,36 @@
 <div class="step successful">When the time is <span class="step parameter">24:00:00</span></div>
 <div class="step successful">Then the clock should look like<br/>Y<br/>RRRR<br/>RRRR<br/>OOOOOOOOOOO<br/>OOOO</div>
 </div>
+<div class="scenario">
+<h2>Scenario: Morning</h2>
+<div class="step successful">When the time is <span class="step parameter">05:00:00</span></div>
+<div class="step successful">Then the clock should look like<br/>Y<br/>ROOO<br/>OOOO<br/>OOOOOOOOOOO<br/>OOOO</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Before Morning</h2>
+<div class="step successful">When the time is <span class="step parameter">03:30:59</span></div>
+<div class="step successful">Then the clock should look like<br/>O<br/>OOOO<br/>RRRO<br/>YYRYYROOOOO<br/>OOOO</div>
+</div>
+<div class="scenario">
+<h2>Scenario: After Morning</h2>
+<div class="step successful">When the time is <span class="step parameter">11:45:45</span></div>
+<div class="step successful">Then the clock should look like<br/>O<br/>RROO<br/>ROOO<br/>YYRYYRYYROO<br/>OOOO</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Afternoon</h2>
+<div class="step successful">When the time is <span class="step parameter">12:00:00</span></div>
+<div class="step successful">Then the clock should look like<br/>Y<br/>RROO<br/>RROO<br/>OOOOOOOOOOO<br/>OOOO</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Evening</h2>
+<div class="step successful">When the time is <span class="step parameter">18:30:00</span></div>
+<div class="step successful">Then the clock should look like<br/>Y<br/>RRRO<br/>RRRO<br/>YYRYYROOOOO<br/>OOOO</div>
+</div>
+<div class="scenario">
+<h2>Scenario: After Evening</h2>
+<div class="step successful">When the time is <span class="step parameter">22:30:55</span></div>
+<div class="step successful">Then the clock should look like<br/>O<br/>RRRR<br/>RROO<br/>YYRYYROOOOO<br/>OOOO</div>
+</div>
 </div>
 
 </body>

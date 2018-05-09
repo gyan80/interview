@@ -44,5 +44,56 @@ RRRR
 OOOOOOOOOOO
 OOOO
 
+Scenario: Morning
+When the time is 05:00:00
+Then the clock should look like
+Y
+ROOO
+OOOO
+OOOOOOOOOOO
+OOOO
 
+Scenario: Before Morning
+When the time is 03:30:59
+Then the clock should look like
+O
+OOOO
+RRRO
+YYRYYROOOOO
+OOOO
 
+Scenario: After Morning
+When the time is 11:45:45
+Then the clock should look like
+O
+RROO
+ROOO
+YYRYYRYYROO
+OOOO
+
+Scenario: Afternoon
+When the time is 12:00:00
+Then the clock should look like
+Y
+RROO
+RROO
+OOOOOOOOOOO
+OOOO
+
+Scenario: Evening
+When the time is 18:30:00
+Then the clock should look like
+Y
+RRRO
+RRRO
+YYRYYROOOOO
+OOOO
+
+Scenario: After Evening
+When the time is 22:30:55
+Then the clock should look like
+O
+RRRR
+RROO
+YYRYYROOOOO
+OOOO
