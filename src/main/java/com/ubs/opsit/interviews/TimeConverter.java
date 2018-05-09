@@ -8,6 +8,6 @@ public interface TimeConverter {
 	String ON_SIGN_HRS = "R";
 	String ON_SIGN_MIN = "Y";
 
-    String convertTime(String aTime);
+	String convertTime(String aTime);
 
 }

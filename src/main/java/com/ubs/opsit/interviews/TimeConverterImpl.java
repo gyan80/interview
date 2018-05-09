@@ -53,9 +53,4 @@ public class TimeConverterImpl implements TimeConverter {
 		return (number - (number % 5)) / 5;
 	}
 
-	public static void main(String[] args) {
-		TimeConverter converter = new TimeConverterImpl();
-		System.out.println(converter.convertTime("23:59:59"));
-	}
-
 }
